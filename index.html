@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products carousel</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul
+        class="products-list"
+        style="
+          display: flex;
+          overflow-x: auto;
+          gap: 10px;
+          padding: 10px;
+          scroll-snap-type: x mandatory;
+          list-style: none;
+          position: relative;
+        "
+      ></ul>
+      <button
+        type="button"
+        id="scroll-left"
+        style="position: fixed; top: 40%; left: 0; cursor: pointer;"
+      >
+        &#8592
+      </button>
+      <button
+        type="button"
+        id="scroll-right"
+        style="position: fixed; right: 30px; top: 40%; cursor: pointer;"
+      >
+        &#8594
+      </button>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <!-- <script src="./variant2.js"></script> -->
+  </body>
+</html>
